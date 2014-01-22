@@ -37,8 +37,8 @@ discovered the missing piece:
   **install xorg-x11-xauth on the server !**
 
 Apparently xauth has to be present on the server (the VM in my case),
-because when your local ssh client attempts to set up X11 forwarding, it
-uses xauth to set up the authorization information used to connect to your
+because when the local ssh client attempts to set up X11 forwarding, it
+uses xauth to set up the authorization information used to connect to the
 local X server.  So, in addition to the above ssh/ssd config changes,
 
     sudo yum install xorg-x11-xauth
