@@ -178,6 +178,7 @@ a:visited { color: #a0a; }
   height: 2em;
   line-height: 2em;
   margin-bottom: 1.5em;
+  border-bottom: 4px solid #eee;
 }
 .mytitle {
   position: absolute;
