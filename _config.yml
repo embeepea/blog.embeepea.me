@@ -2,3 +2,4 @@ name: blog.embeepea.me
 markdown: redcarpet
 pygments: true
 baseurl: http://blog.embeepea.me
+permalink: /posts/:year/:month/:day/:title.html
