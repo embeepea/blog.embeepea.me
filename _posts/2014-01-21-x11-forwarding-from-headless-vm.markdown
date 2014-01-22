@@ -34,7 +34,7 @@ and that you should invoke ssh with the "-X", or maybe the "-Y"
 option.  I did all these things, but it still wasn't working, until I
 discovered the missing piece:
 
-  ** install xorg-x11-xauth on the server ! **
+  **install xorg-x11-xauth on the server !**
 
 Apparently xauth has to be present on the server (the VM in my case),
 because when your local ssh client attempts to set up X11 forwarding, it
