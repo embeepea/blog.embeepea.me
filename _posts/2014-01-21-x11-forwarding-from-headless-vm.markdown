@@ -11,7 +11,7 @@ CentOS VM that I have running locally on the MacBook via Vagrant and
 VirtualBox.
 
 I need this because I'm using python matplotlib to display plots, and
-I want to do this on a VM rather than directly on my MacBook, because
+I want to do this on a VM rather than directly on my MacBook, since
 I'm experimenting with installing various other python libraries, and
 I don't want to run the risk of screwing up the python installation(s)
 on my MacBook by installing experimental libraries.  I tried using
@@ -20,13 +20,13 @@ virtualenv on the MacBook but could not get it to work.
 
 I've done X11 forwarding over ssh many times before, but for some reason
 this time it wasn't working. I found lots of instructions on how to do it, on
-stackoverflow and elsewhere, explaining that the sshd server
-(`/etc/ssh/sshd_config` on the CentOS VM in this case) must be
-configured with
+stackoverflow and elsewhere, explaining that the sshd server config file
+( `/etc/ssh/sshd_config` on the CentOS VM in this case) must contain
 
     X11Forwarding yes
 
-and the client (`/etc/ssh_config` on the MacBook in this case) must be configured with
+and the ssh client config file ( `/etc/ssh_config` on the MacBook in this case)
+must contain
 
     ForwardX11 yes
 
