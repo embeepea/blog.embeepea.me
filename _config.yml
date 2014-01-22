@@ -1,3 +1,4 @@
-name: blog.embeepea.com
+name: blog.embeepea.me
 markdown: redcarpet
 pygments: true
+baseurl: http://blog.embeepea.me
