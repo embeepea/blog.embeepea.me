@@ -39,7 +39,14 @@ discovered the missing piece:
 Apparently xauth has to be present on the server (the VM in my case),
 because when the local ssh client attempts to set up X11 forwarding, it
 uses xauth to set up the authorization information used to connect to the
-local X server.  So, in addition to the above ssh/ssd config changes,
+local X server.  Usually when I want to tunnel and X11 display over an ssh
+connection, I'm ssh-ing to a system that is running an X server, so all the
+software associated with X, including xauth, is already installed.  In this
+case, however, I was connecting to a headless server which did not have X.
+That's OK -- it isn't necessary for X itself to be installed on a remote
+system in order for X clients on it to be able to create windows on the X
+server running on your local system.  But apparently, as I figured out today, 
+xauth has to be installed. So, in addition to the above ssh/ssd config changes,
 
     sudo yum install xorg-x11-xauth
 
